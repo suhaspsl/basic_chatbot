@@ -72,3 +72,18 @@ Planned upgrades include:
 📝 Add logging
 
 🤖 Add multiple model support
+
+
+---
+
+### 🛠️DEVELOPMENT NOTES
+```
+##This project is kept intentionally simple so beginners can understand how:
+
+-API requests work
+
+-Chatbots generate responses
+
+-Environment variables are used securely
+
+-The backend and frontend connect
