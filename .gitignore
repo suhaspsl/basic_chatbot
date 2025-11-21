@@ -1,0 +1,23 @@
+# Ignore all .env files everywhere
+.env
+*.env
+**/.env
+**/*.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Node
+node_modules/
+
+# OS junk
+.DS_Store
+Thumbs.db
