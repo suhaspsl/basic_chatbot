@@ -28,3 +28,16 @@ I will be **constantly updating and improving** this project over time. 🚀
 ```bash
 git clone https://github.com/your-username/basic_chatbot.git
 cd basic_chatbot
+### 2️⃣ Create your .env file
+
+Create a file named .env in the backend folder:
+
+GEMINI_API_KEY=your_gemini_key_here
+
+### ▶️ Running the Backend
+
+If your backend uses FastAPI + Uvicorn (adjust if different):
+
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
