@@ -35,6 +35,7 @@ Inside the backend/ folder, create:
 GEMINI_API_KEY=your_gemini_key_here
 ```
 ---
+
 ###3️⃣ Run the backend
 ```bash
 cd backend
