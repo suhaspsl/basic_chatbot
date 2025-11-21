@@ -1,24 +1,23 @@
 # 🤖 basic_chatbot  
-A simple and beginner-friendly chatbot that uses **Google Gemini API** to answer user questions.  
-I will be **constantly updating and improving** this project over time. 🚀
+A simple chatbot that uses **Google Gemini API** to answer user questions.  
+I will be **constantly updating and improving** this project. 🚀
 
 ---
 
 ## ✨ Features
-- ⚡ Uses **Gemini API** to generate responses  
-- 🧩 Basic and easy-to-understand code structure  
-- 🌱 Beginner-friendly project for learning how chatbots work  
-- 🔒 Secure API usage via environment variables  
-- 🔧 Backend built with Python (FastAPI or similar – adjust as needed)  
+- ⚡ Uses **Gemini API**  
+- 🌱 Beginner-friendly structure  
+- 🔒 Secure API handling via `.env`  
+- 🧩 Easy to extend and customize  
 - 🔄 Continuous improvements planned  
 
 ---
 
 ## 📦 Tech Stack
-- **Python**  
-- **Gemini API (Google AI)**  
-- **FastAPI / Uvicorn**  
-- **dotenv for environment variables**
+- **Python**
+- **FastAPI / Uvicorn**
+- **Gemini API**
+- **dotenv**
 
 ---
 
@@ -28,36 +27,49 @@ I will be **constantly updating and improving** this project over time. 🚀
 ```bash
 git clone https://github.com/your-username/basic_chatbot.git
 cd basic_chatbot
+###2️⃣ Create your .env file
 
-### 2️⃣ Create your .env file
-```bash
-Create a file named .env in the backend folder:
+Inside the backend/ folder, create a file named .env:
 
 GEMINI_API_KEY=your_gemini_key_here
 
-### ▶️ Running the Backend
-```bash
-If your backend uses FastAPI + Uvicorn (adjust if different):
-
+▶️ Running the Backend
 cd backend
 pip install -r requirements.txt
 uvicorn main:app --reload
----
+
+📂 Project Structure
+basic_chatbot/
+│
+├── backend/
+│   ├── main.py
+│   ├── gemini_client.py
+│   ├── schemas.py
+│   ├── list_models.py
+│   ├── requirements.txt
+│   └── .env   (ignored)
+│
+├── frontend/
+│   └── app.py
+│
+└── .gitignore
+
 🛠️ Development Notes
 
-This project is kept intentionally simple so beginners can understand how:
+This project is kept intentionally simple so beginners can understand:
 
-API requests work
+How API requests work
 
-Chatbots generate responses
+How chatbots generate responses
 
-Environment variables are used securely
+How environment variables keep secrets safe
 
-The backend and frontend connect
----
+How backend and frontend connect
+
+
 📈 Future Improvements
 
-Planned upgrades include:
+Planned updates include:
 
 🌐 Add a proper frontend UI
 
@@ -67,23 +79,8 @@ Planned upgrades include:
 
 🚀 Deploy the project online
 
-🔒 Add rate-limit & API safety checks
+🔒 Rate-limiting & API safety
 
-📝 Add logging
+📝 Logging
 
-🤖 Add multiple model support
-
-
----
-
-### 🛠️DEVELOPMENT NOTES
-```
-##This project is kept intentionally simple so beginners can understand how:
-
--API requests work
-
--Chatbots generate responses
-
--Environment variables are used securely
-
--The backend and frontend connect
+🤖 Support for multiple models
